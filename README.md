@@ -8,7 +8,6 @@
 - Affichage des visages détectés dans un carrousel.
 - Possibilité de cliquer sur une image dans le carrousel pour la voir en plus grand.
 - Téléchargement des visages détectés sous forme d'images.
-- Support de l'ouverture simultanée de plusieurs fenêtres de visualisation d'images.
 
 ## Prérequis
 
