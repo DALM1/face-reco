@@ -19,4 +19,4 @@
 
 1. Clonez ce repository ou téléchargez les fichiers source :
    ```bash
-   git clone https://github.com/ton-nom-utilisateur/face-track.git
+   git clone https://github.com/DALM1/face-reco.git
