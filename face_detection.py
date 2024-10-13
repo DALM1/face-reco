@@ -22,7 +22,7 @@ class FaceDetectionApp(QWidget):
         self.main_layout.addWidget(self.summary_label)
 
         self.face_carousel = QHBoxLayout()
-        self.face_carousel.setSpacing(5)
+        self.face_carousel.setSpacing(3)
 
         self.scroll_area = QScrollArea(self)
         self.scroll_area_widget = QWidget()

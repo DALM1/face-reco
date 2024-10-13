@@ -1,0 +1,3 @@
+([('face_detection',
+   '/Users/dalm1/Desktop/Reroll/Progra/face-track/dist/face_detection',
+   'EXECUTABLE')],)
