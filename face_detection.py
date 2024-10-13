@@ -29,7 +29,7 @@ class FaceDetectionApp(QWidget):
         self.video_label = QLabel(self)
         self.main_layout.addWidget(self.video_label)
 
-        self.summary_label = QLabel("Visages détectés : 0", self)
+        self.summary_label = QLabel("Visages détectés 0", self)
         self.main_layout.addWidget(self.summary_label)
 
         self.target_input = QLineEdit(self)
@@ -92,7 +92,7 @@ class FaceDetectionApp(QWidget):
                 if self.target_face_hash and face_hash == self.target_face_hash:
                     self.alert_detected_face()
 
-            self.summary_label.setText(f"Visages détectés : {len(self.detected_faces)}")
+            self.summary_label.setText(f"Visages détectés {len(self.detected_faces)}")
 
             rgb_image = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
             height, width, channel = rgb_image.shape
@@ -165,7 +165,7 @@ class FaceDetectionApp(QWidget):
         face_label.setPixmap(QPixmap.fromImage(q_img).scaled(300, 300))
         layout.addWidget(face_label)
 
-        hash_label = QLabel(f"Hash: {face_hash}", dialog)
+        hash_label = QLabel(f"HASH {face_hash}", dialog)
         layout.addWidget(hash_label)
 
         copy_button = QPushButton("Copier le hash", dialog)
@@ -224,7 +224,7 @@ class FaceDetectionApp(QWidget):
         dialog = QDialog(self)
         dialog.setWindowTitle("ALERTE <Visage Cible>")
         layout = QVBoxLayout()
-        alert_label = QLabel("Visage cible détecté !")
+        alert_label = QLabel("Visage cible détecté")
         layout.addWidget(alert_label)
         dialog.setLayout(layout)
         dialog.exec_()
